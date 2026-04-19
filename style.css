@@ -7,7 +7,7 @@ body {
 .invoice-container {
   width: 80%;
   margin: 30px auto;
-  background: rgb(15, 15, 15);
+  background:#000;
   padding: 20px;
   border-radius: 10px;
 }
