@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  background: #f0f2f5;
+  color: #fff;
+}
+
+.invoice-container {
+  width: 80%;
+  margin: 30px auto;
+  background: rgb(15, 15, 15);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-section input {
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.print-btn {
+  margin-top: 20px;
+  background: green;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #333;
+  color: white;
+}
+
+.summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.delete-btn {
+  background: red;
+}

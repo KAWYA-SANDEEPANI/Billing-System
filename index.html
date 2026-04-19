@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Billing System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="invoice-container">
+
+  <h1>Invoice</h1>
+
+  <div class="top-section">
+    <p>Invoice No: <span id="invoiceNo"></span></p>
+    <p>Date: <span id="date"></span></p>
+  </div>
+
+  <div class="input-section">
+    <input type="text" id="name" placeholder="Item Name">
+    <input type="number" id="price" placeholder="Price">
+    <input type="number" id="qty" placeholder="Qty">
+    <button onclick="addItem()">Add</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <div class="summary">
+    <p>Subtotal: <span id="subtotal">0</span></p>
+    <p>Tax (10%): <span id="tax">0</span></p>
+    <p>Discount: <input type="number" id="discount" value="0" oninput="calculateTotal()"></p>
+    <h2>Grand Total: <span id="grandTotal">0</span></h2>
+  </div>
+
+  <button class="print-btn" onclick="printInvoice()">Print</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
